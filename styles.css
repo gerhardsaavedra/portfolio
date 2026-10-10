@@ -1,0 +1,13 @@
+:root {
+    --text-color: white;
+    --background-color: rgb(21, 37, 66);
+    --line-height: 1.6;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+}
