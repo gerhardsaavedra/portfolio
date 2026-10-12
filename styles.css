@@ -10,6 +10,7 @@
     --line-height: 1.6;
     --font-family: Arial, sans-serif;
     --border-color: rgba(255, 255, 255, 0.2);
+    --accent-color: #80d2f0;
 }
 
 body {
@@ -21,8 +22,18 @@ body {
 }
 
 a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+a:hover {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px dashed var(--accent-color);
+    outline-offset: 4px;
 }
 
 header {
@@ -31,6 +42,20 @@ header {
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid var(--border-color);
+}
+
+.logo,
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+nav a:hover {
+    color: var(--accent-color);
 }
 
 nav ul {
