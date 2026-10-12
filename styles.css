@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --text-color: white;
     --background-color: rgb(10, 26, 54);
@@ -11,6 +17,12 @@ body {
     color: var(--text-color);
     font-family: var(--font-family);
     line-height: var(--line-height);
+    margin: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 header {
@@ -21,20 +33,21 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
 nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    gap: 1rem;    
+    gap: 1rem;
 }
 
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
 }
