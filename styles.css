@@ -11,6 +11,7 @@
     --font-family: Arial, sans-serif;
     --border-color: rgba(255, 255, 255, 0.2);
     --accent-color: #80d2f0;
+    --surface-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -75,4 +76,12 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
