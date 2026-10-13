@@ -12,6 +12,7 @@
     --border-color: rgba(255, 255, 255, 0.2);
     --accent-color: #80d2f0;
     --surface-color: rgba(255, 255, 255, 0.1);
+    --muted-text-color: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -84,4 +85,15 @@ main {
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-text-color);
+}
+
+footer p {
+    margin: 0;
 }
